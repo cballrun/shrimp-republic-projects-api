@@ -5,10 +5,10 @@ class CreateProjects < ActiveRecord::Migration[7.0]
       t.string :url
       t.string :description
       t.string :features
-      t.integer :classification
-      t.integer :stage
-      t.date :start_date
-      t.date :end_date
+      t.string :classification
+      t.string :stage
+      t.string :start
+      t.string :end
 
       t.timestamps
     end

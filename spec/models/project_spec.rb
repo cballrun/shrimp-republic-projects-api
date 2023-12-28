@@ -9,6 +9,6 @@ RSpec.describe Project, type: :model do
   describe 'validations' do
     it { should validate_presence_of(:name) }
     it { should validate_presence_of(:url) }
-    it { should validate_presence_of(:start_date) }
+    it { should validate_presence_of(:start) }
   end
 end

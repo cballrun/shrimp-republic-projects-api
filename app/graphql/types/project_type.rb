@@ -9,8 +9,8 @@ module Types
     field :features, String
     field :classification, Integer
     field :stage, Integer
-    field :start_date, GraphQL::Types::ISO8601Date
-    field :end_date, GraphQL::Types::ISO8601Date
+    field :start, String
+    field :end, String
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
   end

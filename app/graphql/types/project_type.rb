@@ -7,8 +7,8 @@ module Types
     field :url, String
     field :description, String
     field :features, String
-    field :classification, Integer
-    field :stage, Integer
+    field :classification, String
+    field :stage, String
     field :start, String
     field :end, String
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false

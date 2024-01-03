@@ -31,7 +31,6 @@ RSpec.describe "Projects API", type: :request do
         post "/graphql", params: { query: query_string }
         expect(response).to be_successful
         reply = JSON.parse(response.body, symbolize_names: true)
-        binding.pry
         data = reply[:data]
 
         expect(data[:projects].count).to eq(3)

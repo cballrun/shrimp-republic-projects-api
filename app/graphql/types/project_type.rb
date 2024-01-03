@@ -11,6 +11,7 @@ module Types
     field :stage, String
     field :start, String
     field :end, String
+    field :project_tools, [Types::ProjectToolType]
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
   end

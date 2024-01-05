@@ -81,6 +81,10 @@ test:
 #
 production:
   <<: *default
-  database: shrimp_republic_projects_api_production
-  username: shrimp_republic_projects_api
-  password: <%= ENV["SHRIMP_REPUBLIC_PROJECTS_API_DATABASE_PASSWORD"] %>
+ adapter: postgresql
+  encoding: unicode
+  database: <%= ENV['RDS_DB_NAME'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: <%= ENV['RDS_PORT'] %>

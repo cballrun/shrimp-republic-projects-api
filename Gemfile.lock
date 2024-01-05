@@ -136,6 +136,8 @@ GEM
     net-smtp (0.4.0)
       net-protocol
     nio4r (2.7.0)
+    nokogiri (1.15.5-x86_64-darwin)
+      racc (~> 1.4)
     nokogiri (1.15.5-x86_64-linux)
       racc (~> 1.4)
     pg (1.5.4)
@@ -145,7 +147,7 @@ GEM
     psych (5.1.1.1)
       stringio
     public_suffix (5.0.4)
-    puma (6.2.2)
+    puma (6.4.0)
       nio4r (~> 2.0)
     racc (1.7.3)
     rack (2.2.8)
@@ -227,6 +229,7 @@ GEM
     zeitwerk (2.6.12)
 
 PLATFORMS
+  x86_64-darwin-23
   x86_64-linux
 
 DEPENDENCIES
@@ -240,7 +243,7 @@ DEPENDENCIES
   graphql
   pg (~> 1.1)
   pry
-  puma (= 6.2.2)
+  puma (= 6.4.0)
   rack-cors
   rails (~> 7.0.8)
   rspec-rails
